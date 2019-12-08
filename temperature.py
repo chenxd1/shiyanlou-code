@@ -1,8 +1,15 @@
 #!/usr/bin/env python3
-fahrenheit = 0
-print('Fahrenheit Celsius')
-while fahrenheit <= 250:
-    celsius = (fahrenheit - 32) / 1.8 #（摄氏度=华氏度-32）/1.8
-    print('{:5d}{:7.2f}'.format(fahrenheit,celsius))
-    fahrenheit+=25
+
+#计算10个数的平均值
+N=10
+sum=0
+count=0
+print('请输入10个数字: ')
+while count < N:
+    number = float(input())
+    sum=sum + number
+    count = count + 1
+average = sum / 10
+print('N = {},Sum = {}'.format(N,sum))
+print('average={:.2f}'.format(average))
 
